@@ -39,7 +39,6 @@ public class vural_p8 {
     private static javax.swing.JButton mergeSortIntsButton;
     //private static javax.swing.JButton merge2SortIntsButton;
     //private static javax.swing.JButton quickSortIntsButton;
-    // TODO: heap sort
 
     // right buttons
     private static javax.swing.JButton searchSortedtIntsButton;
@@ -96,8 +95,10 @@ public class vural_p8 {
 
         // menu bar
         javax.swing.JMenuBar menuBar = new javax.swing.JMenuBar();
+
         // file menu on menu bar
         javax.swing.JMenu fileMenu = new javax.swing.JMenu("File");
+        
         // file menu items on file menu
         javax.swing.JMenuItem readSortFile = new javax.swing.JMenuItem("Read sort file");
         javax.swing.JMenuItem readSearchFile = new javax.swing.JMenuItem("Read search file");
@@ -120,15 +121,11 @@ public class vural_p8 {
 
         // left button panel
         javax.swing.JPanel leftButtonPanel = new javax.swing.JPanel();
-
         leftButtonPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0, 255), 2));
-
         java.awt.GridBagLayout leftButtonPanelGridBagLayout = new java.awt.GridBagLayout();
         leftButtonPanel.setLayout(leftButtonPanelGridBagLayout);
-
         leftButtonPanel.setPreferredSize(new java.awt.Dimension(button_width, button_height));
         leftButtonPanel.setMinimumSize(new java.awt.Dimension(button_width, button_height));
-
         java.awt.GridBagConstraints leftButtonPanelConstraints = new java.awt.GridBagConstraints();
 
         // left buttons
@@ -162,6 +159,7 @@ public class vural_p8 {
         leftButtonPanelConstraints.weighty = 1;
         leftButtonPanelConstraints.fill = java.awt.GridBagConstraints.NONE;
         leftButtonPanelConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        
         // 1
         leftButtonPanelConstraints.gridx = 0;
         leftButtonPanelConstraints.gridy = 0;
@@ -171,6 +169,7 @@ public class vural_p8 {
         leftButtonPanelConstraints.gridy = 0;
         leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
         leftButtonPanelGridBagLayout.setConstraints(sortIntsLabel, leftButtonPanelConstraints);
+        
         // 2
         leftButtonPanelConstraints.gridx = 0;
         leftButtonPanelConstraints.gridy = 1;
@@ -180,6 +179,7 @@ public class vural_p8 {
         leftButtonPanelConstraints.gridy = 1;
         leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
         leftButtonPanelGridBagLayout.setConstraints(addToBstLabel, leftButtonPanelConstraints);
+        
         // 3
         leftButtonPanelConstraints.gridx = 0;
         leftButtonPanelConstraints.gridy = 2;
@@ -189,6 +189,7 @@ public class vural_p8 {
         leftButtonPanelConstraints.gridy = 2;
         leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
         leftButtonPanelGridBagLayout.setConstraints(addToTreesetLabel, leftButtonPanelConstraints);
+        
         // 4
         leftButtonPanelConstraints.gridx = 0;
         leftButtonPanelConstraints.gridy = 3;
@@ -198,6 +199,7 @@ public class vural_p8 {
         leftButtonPanelConstraints.gridy = 3;
         leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
         leftButtonPanelGridBagLayout.setConstraints(addToPrioritQueueLabel, leftButtonPanelConstraints);
+       
         // 5
         leftButtonPanelConstraints.gridx = 0;
         leftButtonPanelConstraints.gridy = 4;
@@ -207,6 +209,7 @@ public class vural_p8 {
         leftButtonPanelConstraints.gridy = 4;
         leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
         leftButtonPanelGridBagLayout.setConstraints(addToHashsetLabel, leftButtonPanelConstraints);
+        
         // 6
         leftButtonPanelConstraints.gridx = 0;
         leftButtonPanelConstraints.gridy = 5;
@@ -216,6 +219,7 @@ public class vural_p8 {
         leftButtonPanelConstraints.gridy = 5;
         leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
         leftButtonPanelGridBagLayout.setConstraints(addToArraylistLabel, leftButtonPanelConstraints);
+        
         // 7
         leftButtonPanelConstraints.gridx = 0;
         leftButtonPanelConstraints.gridy = 6;
@@ -225,6 +229,7 @@ public class vural_p8 {
         leftButtonPanelConstraints.gridy = 6;
         leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
         leftButtonPanelGridBagLayout.setConstraints(addToSortedArrayListLabel, leftButtonPanelConstraints);
+        
         // 8
         leftButtonPanelConstraints.gridx = 0;
         leftButtonPanelConstraints.gridy = 7;
@@ -234,6 +239,7 @@ public class vural_p8 {
         leftButtonPanelConstraints.gridy = 7;
         leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
         leftButtonPanelGridBagLayout.setConstraints(addToArrayLabel, leftButtonPanelConstraints);
+       
         // 9
         leftButtonPanelConstraints.gridx = 0;
         leftButtonPanelConstraints.gridy = 8;
@@ -243,6 +249,7 @@ public class vural_p8 {
         leftButtonPanelConstraints.gridy = 8;
         leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
         leftButtonPanelGridBagLayout.setConstraints(mergeSortIntsLabel, leftButtonPanelConstraints);
+        
         //// 10
         //leftButtonPanelConstraints.gridx = 0;
         //leftButtonPanelConstraints.gridy = 9;
@@ -265,33 +272,43 @@ public class vural_p8 {
         // 1
         leftButtonPanel.add(sortIntsButton);
         leftButtonPanel.add(sortIntsLabel);
+        
         // 2
         leftButtonPanel.add(addToBstButton);
         leftButtonPanel.add(addToBstLabel);
+        
         // 3
         leftButtonPanel.add(addToTreesetButton);
         leftButtonPanel.add(addToTreesetLabel);
+       
         // 4
         leftButtonPanel.add(addToPrioritQueueButton);
         leftButtonPanel.add(addToPrioritQueueLabel);
+        
         // 5
         leftButtonPanel.add(addToHashsetButton);
         leftButtonPanel.add(addToHashsetLabel);
         // 6
+       
         leftButtonPanel.add(addToArraylistButton);
         leftButtonPanel.add(addToArraylistLabel);
+       
         // 7
         leftButtonPanel.add(addToSortedArrayListButton);
         leftButtonPanel.add(addToSortedArrayListLabel);
+        
         // 8
         leftButtonPanel.add(addToArrayButton);
         leftButtonPanel.add(addToArrayLabel);
+        
         // 9
         leftButtonPanel.add(mergeSortIntsButton);
         leftButtonPanel.add(mergeSortIntsLabel);
+        
         // 10
         //leftButtonPanel.add(merge2SortIntsButton);
         //leftButtonPanel.add(merge2SortIntsLabel);
+        
         //// 11
         //leftButtonPanel.add(quickSortIntsButton);
         //leftButtonPanel.add(quickSortIntsLabel);
